@@ -1,6 +1,6 @@
 export const routes = [
   {
     href: "/",
-    text: "Home",
+    text: "Login",
   },
 ];

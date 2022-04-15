@@ -1,3 +1,7 @@
+label > span {
+  cursor: pointer;
+}
+
 .brand {
   color: #fff;
 }

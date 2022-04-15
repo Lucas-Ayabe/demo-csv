@@ -1,8 +1,9 @@
-import "../modules/shared/styles/app.css";
 import type { AppProps } from "next/app";
 import { NextPage } from "next";
 import { ReactElement, ReactNode } from "react";
-import { Layout } from "../modules/shared/components";
+
+import { Layout } from "@shared/components";
+import "@shared/styles/app.css";
 
 type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode;

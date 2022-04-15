@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import Head from "next/head";
 
-import { routes } from "../../../config";
+import { routes } from "@config";
 import { Header } from "./Header";
 
 interface LayoutProps {

@@ -16,7 +16,7 @@
     "next.config.js": true,
     "package.json": true,
     "README.md": true,
-    "tsconfig.json": true,
+    "tsconfig.json": false,
     "yarn.lock": true
   }
 }

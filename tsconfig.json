@@ -5,7 +5,9 @@
       "@config": ["config/index.ts"],
       "@config/*": ["config/*"],
       "@shared/*": ["modules/shared/*"],
-      "@auth/*": ["modules/auth/*"]
+      "@auth/*": ["modules/auth/*"],
+      "@csv/*": ["modules/csv/*"],
+      "@statistics/*": ["modules/statistics/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

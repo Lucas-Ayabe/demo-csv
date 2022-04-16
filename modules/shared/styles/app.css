@@ -5,3 +5,11 @@ label > span {
 .brand {
   color: #fff;
 }
+
+.is-inline {
+  display: inline-block;
+}
+
+button.is-inline {
+  width: auto;
+}

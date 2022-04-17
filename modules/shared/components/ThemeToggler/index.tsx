@@ -54,8 +54,9 @@ export const ThemeToggler = () => {
       };
 
   useEffect(() => {
+    const media = window?.matchMedia("(prefers-color-scheme: dark)");
     const updateTheme = () => setDark(media.matches);
-    const media = window?.matchMedia("(prefers-color-schema: dark)");
+
     media.addEventListener("change", updateTheme);
     updateTheme();
 

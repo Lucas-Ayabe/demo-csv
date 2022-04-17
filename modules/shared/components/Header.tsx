@@ -13,7 +13,7 @@ export const Header = ({ links }: HeaderProps) => {
           <li>
             <Link passHref href="/">
               <a className="brand">
-                <strong>Boot</strong>
+                <strong>This is bot</strong>
               </a>
             </Link>
           </li>

@@ -13,7 +13,7 @@ export const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Head>
-        <title>Demo</title>
+        <title>This is bot</title>
       </Head>
       <Header links={routes} />
       <main className="container">{children}</main>

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { withAuth } from "@auth/middlewares/with-auth";
-import { withPreventDefault } from "@shared/hocs";
+import { withPreventDefault } from "@shared/utils/hocs";
 import { useRef } from "react";
 
 interface HomeProps {

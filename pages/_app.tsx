@@ -1,6 +1,8 @@
 import type { AppProps } from "next/app";
 import { NextPage } from "next";
 import { ReactElement, ReactNode } from "react";
+import { Provider } from "react-redux";
+import store from "@shared/store";
 
 import { Layout } from "@shared/components";
 import "@shared/styles/app.css";
@@ -15,7 +17,11 @@ type AppPropsWithLayout = AppProps & {
 
 function App({ Component, pageProps }: AppPropsWithLayout) {
   const withLayout = Component.getLayout ?? ((page) => <Layout>{page}</Layout>);
-  return withLayout(<Component {...pageProps} />);
+  return (
+    <Provider store={store}>
+      {withLayout(<Component {...pageProps} />)}
+    </Provider>
+  );
 }
 
 export default App;

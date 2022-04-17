@@ -3,7 +3,7 @@ label > span {
 }
 
 .brand {
-  color: #fff;
+  color: var(--h1-color);
 }
 
 .is-inline {

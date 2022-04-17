@@ -54,11 +54,13 @@ export const ThemeToggler = () => {
       };
 
   useEffect(() => {
+    const updateTheme = () => setDark(media.matches);
     const media = window?.matchMedia("(prefers-color-schema: dark)");
-    media.onchange = () => setDark(media.matches);
+    media.addEventListener("change", updateTheme);
+    updateTheme();
 
     return () => {
-      media.onchange = null;
+      media.removeEventListener("change", updateTheme);
     };
   }, []);
 

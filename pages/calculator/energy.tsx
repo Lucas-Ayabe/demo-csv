@@ -20,6 +20,8 @@ const Energy: NextPage = () => {
     { label: "50K", field: fields.fifty },
   ];
 
+  const formattedTotal = total < 1000 ? total + "K" : total / 1000 + "M";
+
   return (
     <section>
       <h1>Calculadora de energia</h1>
@@ -38,7 +40,7 @@ const Energy: NextPage = () => {
         <div>
           <article className={styles.total}>
             <h2 className={styles.totalTitle}>Total de energia</h2>
-            <strong className={styles.totalValue}>{total}</strong>
+            <strong className={styles.totalValue}>{formattedTotal}</strong>
           </article>
         </div>
       </div>
